@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            spacing="20.0"
+            fx:controller="net.programa.sklep.programsklep.RegController"
+            >
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Login"/>
+    <TextField fx:id="login"/>
+    <Label text="Password"/>
+    <PasswordField fx:id="password1"/>
+    <Label text="Confirm password"/>
+    <PasswordField fx:id="password2"/>
+    <Button text="ro" onAction="#register" alignment="CENTER"/>
+    <Hyperlink text="Already have an account? Login!" onAction="#goto_login" alignment="CENTER"/>
+</VBox>

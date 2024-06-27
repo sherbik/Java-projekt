@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="net.programa.sklep.programsklep.UuserView" spacing="20">
+    <HBox><Label>Balance: </Label><Text fx:id="bal"/></HBox>
+    <Button onAction="#to_pup">Top up</Button>
+    <Button onAction="#to_shop">Shop</Button>>
+</VBox>

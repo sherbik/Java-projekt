@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            spacing="20.0"
+            fx:controller="net.programa.sklep.programsklep.RootUserViewController">
+    <Button fx:id="manage_categories" onAction="#onManage">Manage products</Button>
+    <Button onAction="#WholeSaleSettings">Wholesale settings</Button>
+</VBox>

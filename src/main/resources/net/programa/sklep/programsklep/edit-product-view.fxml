@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.sun.javafx.scene.control.IntegerField?>
+<?import com.sun.javafx.scene.control.DoubleField?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="net.programa.sklep.programsklep.EditProductViewController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label>Name</Label>
+    <TextField fx:id="Name"/>
+    <Label>Price</Label>
+    <Spinner initialValue="1.0" amountToStepBy="0.5" min="0" max="99999" fx:id="Price"/>
+    <Label>Remains</Label>
+    <Spinner initialValue="1.0" amountToStepBy="0.1" min="0" max="99999" fx:id="Remains"/>
+    <HBox><Label>Is by weight?</Label><CheckBox fx:id="isByWeight" onAction="#onIsByWeightChecked"/><HBox.margin><Insets left="10"/></HBox.margin></HBox>
+    <Button onAction="#Apply">Apply</Button>
+    <Button onAction="#goBack">◀️Back</Button>
+</VBox>

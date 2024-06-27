@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.TextFlow?>
+<FlowPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:id="root_flow"
+          fx:controller="net.programa.sklep.programsklep.ProductManagerCellController"
+          prefHeight="40.0">
+        <FlowPane>
+            <Text fx:id="name"/>
+            <FlowPane/>
+            <Text fx:id="price"/>
+            <FlowPane/>
+            <Text fx:id="remains"/>
+        </FlowPane>
+        <FlowPane>
+            <Button onAction="#edit">
+                Edit
+            </Button>
+            <Button onAction="#remove">
+                Remove
+            </Button>
+        </FlowPane>
+</FlowPane>
