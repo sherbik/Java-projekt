@@ -2,6 +2,7 @@ package net.programa.sklep.programsklep.Database;
 
 import net.programa.sklep.programsklep.Application;
 import net.programa.sklep.programsklep.RootUserViewController;
+import net.programa.sklep.programsklep.UuserView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,11 +27,10 @@ public class User extends Model {
 
     public void ShowForm(){
         if (is_root()){
-            RootUserViewController rootUserViewController = new RootUserViewController();
-            rootUserViewController.open_form(Application.currentStage);
+            RootUserViewController.open_form(Application.currentStage);
         }
         else {
-            throw new RuntimeException("NOT IMPLEMENTED YET");
+            UuserView.open_form(Application.currentStage);
         }
     }
 
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS users (
 """);
         if (!is_user_exist("root")){
             if (register("root", "root") == null){
-                throw new RuntimeException("NOT ROOT NOT REG");
+                throw new RuntimeException("Could not register root user");
             }
         }
     }

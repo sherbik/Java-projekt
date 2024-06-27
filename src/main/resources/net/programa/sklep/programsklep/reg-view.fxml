@@ -22,6 +22,6 @@
     <PasswordField fx:id="password1"/>
     <Label text="Confirm password"/>
     <PasswordField fx:id="password2"/>
-    <Button text="ro" onAction="#register" alignment="CENTER"/>
+    <Button text="Register" onAction="#register" alignment="CENTER"/>
     <Hyperlink text="Already have an account? Login!" onAction="#goto_login" alignment="CENTER"/>
 </VBox>

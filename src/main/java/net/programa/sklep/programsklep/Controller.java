@@ -51,11 +51,11 @@ public class Controller {
 
     public void Login(ActionEvent actionEvent) {
         try {
-
             User usr = User.login(login.getText(), password.getText());
             if (usr == null){
                 throw new RuntimeException("User not found!");
             }
+            User.currentUser = usr;
             usr.ShowForm();
 
         } catch (Exception e){

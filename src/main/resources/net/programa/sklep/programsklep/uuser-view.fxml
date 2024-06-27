@@ -11,6 +11,6 @@
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="net.programa.sklep.programsklep.UuserView" spacing="20">
     <HBox><Label>Balance: </Label><Text fx:id="bal"/></HBox>
-    <Button onAction="#to_pup">Top up</Button>
-    <Button onAction="#to_shop">Shop</Button>>
+    <Button onAction="#top_up">Top up</Button>
+    <Button onAction="#to_shop">Shop</Button>
 </VBox>

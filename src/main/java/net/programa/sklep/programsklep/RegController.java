@@ -55,6 +55,7 @@ public class RegController {
             utils.showDialog(Alert.AlertType.ERROR, "Error", "User already exists", null, rs -> null);
         }
         User.currentUser = User.register(login.getText(), password1.getText());
+        User.currentUser.ShowForm();
     }
 
     public void goto_login(ActionEvent actionEvent) {

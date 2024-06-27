@@ -9,5 +9,7 @@
 <VBox xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="net.programa.sklep.programsklep.TopupView">
-
+    <HBox><Spinner fx:id="to_add" amountToStepBy="1" initialValue="1" max="1000000"/><Label>$ to top up</Label></HBox>
+    <Button onAction="#top_up">Top up!</Button>
+    <Button onAction="#back">◀️Back</Button>
 </VBox>

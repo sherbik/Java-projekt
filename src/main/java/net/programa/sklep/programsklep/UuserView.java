@@ -28,9 +28,11 @@ public class UuserView {
         stage.setScene(scene);
     }
 
-    public void to_pup(ActionEvent actionEvent) {
+    public void top_up(ActionEvent actionEvent) {
+        TopupView.open_form(Application.currentStage);
     }
 
     public void to_shop(ActionEvent actionEvent) {
+        ShopViewController.open_form(Application.currentStage);
     }
 }
