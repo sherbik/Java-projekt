@@ -13,5 +13,7 @@
     <HBox><Label>Name: </Label><Label fx:id="name"/></HBox><FlowPane/>
     <HBox><Label>Price for </Label><Label fx:id="pfor"></Label><Label> :</Label><Label fx:id="price"/></HBox><FlowPane/>
     <HBox><Label>Count :</Label> <Spinner fx:id="count" max="99999" amountToStepBy="0.1" initialValue="0"><HBox.margin><Insets left="2" bottom="2"/></HBox.margin></Spinner></HBox><FlowPane/>
-    <HBox><Label>Total price: </Label><Label fx:id="total_price"/></HBox>
+    <HBox><Label>Total price: </Label><Label fx:id="total_price"/></HBox><FlowPane/>
+    <HBox visible="false" fx:id="sale_box"><Label>Sale: -</Label><Label fx:id="sale"/></HBox>
+
 </FlowPane>
