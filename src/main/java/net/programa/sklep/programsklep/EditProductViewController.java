@@ -1,6 +1,5 @@
 package net.programa.sklep.programsklep;
 
-import com.sun.javafx.scene.control.DoubleField;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
