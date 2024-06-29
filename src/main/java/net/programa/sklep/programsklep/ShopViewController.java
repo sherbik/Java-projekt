@@ -160,7 +160,7 @@ public class ShopViewController {
                 return;
             }
         }
-        utils.showDialog(Alert.AlertType.INFORMATION, "SUCCESS!", "All product in shopping cart was bought!", "You will be returned to the main page", rs-> {User.currentUser.ShowForm();
+        utils.showDialog(Alert.AlertType.INFORMATION, "SUCCESS!", "All product in shopping cart was bought!\nTotal sum: " + String.format("%.2f", total_price), "You will be returned to the main page", rs-> {User.currentUser.ShowForm();
             return null;
         });
     }
