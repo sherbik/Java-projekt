@@ -23,7 +23,7 @@ public class UuserView {
             return;
         }
         UuserView c = fxmlLoader.getController();
-        c.bal.setText(String.valueOf(User.currentUser.balance));
+        c.bal.setText(String.format("%.2f", User.currentUser.balance));
         stage.setTitle(User.currentUser.login + " main page");
         stage.setScene(scene);
     }
@@ -34,5 +34,10 @@ public class UuserView {
 
     public void to_shop(ActionEvent actionEvent) {
         ShopViewController.open_form(Application.currentStage);
+    }
+
+    public void logout(ActionEvent actionEvent) {
+        User.currentUser = null;
+        Controller.open_form(Application.currentStage);
     }
 }

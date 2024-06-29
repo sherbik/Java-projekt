@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import net.programa.sklep.programsklep.Database.User;
 
 public class RootUserViewController {
     public static Scene currentScene = null;
@@ -38,5 +39,10 @@ public class RootUserViewController {
 
     public void WholeSaleSettings(ActionEvent actionEvent) {
         WholesaleSettingsViewController.open_form(Application.currentStage);
+    }
+
+    public void logout(ActionEvent actionEvent) {
+        User.currentUser = null;
+        Controller.open_form(Application.currentStage);
     }
 }

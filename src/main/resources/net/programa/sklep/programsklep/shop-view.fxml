@@ -6,8 +6,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.geometry.Insets?>
 <VBox xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="net.programa.sklep.programsklep.ShopViewController">
-
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="net.programa.sklep.programsklep.ShopViewController">
+    <ListView fx:id="Products"/>
+    <HBox><Button onAction="#go_back">◀️Back</Button><Button onAction="#buy">Buy!<HBox.margin><Insets left="3"/> </HBox.margin></Button></HBox>
 </VBox>

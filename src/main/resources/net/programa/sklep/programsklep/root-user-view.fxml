@@ -12,4 +12,5 @@
             fx:controller="net.programa.sklep.programsklep.RootUserViewController">
     <Button fx:id="manage_categories" onAction="#onManage">Manage products</Button>
     <Button onAction="#WholeSaleSettings">Wholesale settings</Button>
+    <Button onAction="#logout">Log out</Button>
 </VBox>

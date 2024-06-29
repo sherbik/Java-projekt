@@ -13,4 +13,5 @@
     <HBox><Label>Balance: </Label><Text fx:id="bal"/></HBox>
     <Button onAction="#top_up">Top up</Button>
     <Button onAction="#to_shop">Shop</Button>
+    <Button onAction="#logout">Logout</Button>
 </VBox>

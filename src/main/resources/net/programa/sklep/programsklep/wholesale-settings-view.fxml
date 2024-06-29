@@ -32,5 +32,5 @@
     </HBox>
     <Button fx:id="sset" onAction="#onSset">Set!</Button>
     <Text fx:id="rcustomers">Regular customers: </Text>
-    <Button onAction="#goBack">◀️Wróć</Button>
+    <Button onAction="#goBack">◀️Back</Button>
 </VBox>
